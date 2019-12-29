@@ -6,14 +6,16 @@
 using namespace std;
 
 int main(){
-    int a,b,c;
-    int bep;
-    cin>>a>>b>>c;
-    if(b>=c)
-        bep=-1;
-    else{
-        bep=a/(c-b)+1;
+    int n;
+    int a,b;
+    cin>>n;
+    b=(2*n)%5;
+    a=(n-3*b)/5;
+    if(a<0){
+        cout<<-1<<endl;
     }
-    cout<<bep<<endl;
+    else{
+        cout<<a+b<<endl;
+    }
     return 0;
 }
